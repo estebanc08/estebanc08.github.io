@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Consolas, monaco, monospace;
   line-height: 1.5;
   font-weight: 400;
 
-  color: black;
-  background-color: rgb(240,240,240);
+  color: white;
+  background-color: rgb(0,0,0);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+@font-face {
+  font-family: 'Terminal';
+  src: url('/fonts/DejaVuSans.ttf') format('truetype');
 }

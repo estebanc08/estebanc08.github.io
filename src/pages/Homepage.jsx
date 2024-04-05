@@ -1,7 +1,7 @@
-import Navbar from "./components/Navbar"
+import Navbar from "../components/Navbar"
 import { Link } from "react-router-dom"
 
-export default function PersonalHomepage() {
+export default function Homepage() {
     return (
         <>
         <Navbar />

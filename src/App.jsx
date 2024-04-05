@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import React from "react";
-import PersonalHomepage from "./sites/EstebanCalvo/Homepage"
-import Homepage from './components/Homepage';
+import Projects from './pages/Projects';
+import Homepage from './pages/Homepage';
+import SFML from './pages/SFML';
+import DynaCV from './pages/DynaCV';
+import UFCompass from './pages/UFCompass';
 import {
     BrowserRouter as Router,
     Routes,
@@ -9,13 +12,14 @@ import {
 } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/EstebanCalvo" element={<PersonalHomepage />} />
+        <Route path="/Projects" element={<Projects/>} />
+        <Route path="/Projects/SFML" element={<SFML/>} />
+        <Route path="/Projects/DynaCV" element={<DynaCV/>} />
+        <Route path="/Projects/UFCompass" element={<UFCompass/>} />
       </Routes>
     </Router>
   )
