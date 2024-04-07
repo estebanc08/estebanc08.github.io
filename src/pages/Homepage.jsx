@@ -3,17 +3,39 @@ import { Link } from "react-router-dom"
 
 export default function Homepage() {
     return (
-        <div className="h-screen">
+        <div>
         <Navbar />
-        <div className="w-full h-full px-10">
+        <div className="w-full h-screen px-10">
             <div className="w-full h-full flex justify-center items-center mb-10">
                 <div className="w-10/12">
+                    <div>
                     <div className="text-white text-7xl font-bold">
                         Esteban Calvo
                         <div className="h-1 w-full bg-gray-600 my-4"></div>
                     </div>
                     <div className="text-white text-4xl font-semibold">
                         Computer Science Student at University of Florida
+                    </div>
+                    </div>
+                    <div className="grid gap-5 md:grid-cols-3 pt-10 text-3xl w-full text-center">
+                        <a className="p-1 sm:p-4 hover:bg-gray-800" href="mailTo:estebancalvo0808@gmail.com">
+                        <div className="flex justify-center gap-4">
+                                <img src="/svgs/gmail.svg" alt="Gmail"/>
+                                <div>Email</div>
+                            </div>
+                        </a>
+                        <a className="p-1 sm:p-4 hover:bg-gray-800" href="https://www.linkedin.com/in/estebancalvo08/">
+                            <div className="flex justify-center gap-4">
+                                <img src="/svgs/linkedIn.svg" alt="LinkedIn"/>
+                                <div>LinkedIn</div>
+                            </div>
+                        </a>
+                        <a className="p-1 sm:p-4 hover:bg-gray-800" href="https://www.github.com/estebanc08/">
+                            <div className="flex justify-center gap-4">
+                                <img src="/svgs/github.svg" alt="Github"/>
+                                <div>Github</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

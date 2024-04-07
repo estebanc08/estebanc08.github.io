@@ -5,7 +5,6 @@ import SFML from './pages/SFML';
 import DynaCV from './pages/DynaCV';
 import UFCompass from './pages/UFCompass';
 import Resume from './pages/Resume';
-import Contact from "./pages/Contact";
 import {
     BrowserRouter as Router,
     Routes,
@@ -24,7 +23,6 @@ function App() {
         <Route path="/Projects/UFCompass" element={<UFCompass/>} />
 
         <Route path="/Resume" element={<Resume/>} />
-        <Route path="/Contact" element={<Contact/>} />
 
       </Routes>
     </Router>
